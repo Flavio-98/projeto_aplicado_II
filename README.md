@@ -57,13 +57,96 @@ Explorar dados demográficos e comportamentais dos assinantes da Netflix para ge
 | Fase                        | Tarefa                                              | Status    | Data de Entrega |
 |-----------------------------|----------------------------------------------------|----------|----------------|
 | *Etapa 1*                 | Definição da organização, área de atuação e dados | Feito | 03/03/2025     |
-| *Etapa 2*                 | Desenvolvimento de visualizações e narrativas     | Pendente | 31/03/2025     |
+| *Etapa 2*                 | Desenvolvimento de visualizações e narrativas     | Feito | 31/03/2025     |
 | *Etapa 3*                 | Análise dos resultados e previsão de churn       | Pendente | 28/04/2025     |
 | *Etapa 4*                 | Apresentação final do projeto                     | Pendente | 26/05/2025     |
 
 ---
 
-## 5. Estrutura do Repositório  
+## 5 Análise de Dados de Assinaturas de Plataforma
+
+### Apresentação dos Dados Utilizados
+
+Este projeto analisa uma base de dados que contém informações sobre assinantes de uma plataforma, suas assinaturas e características demográficas.
+
+### Metadados
+
+| Coluna             | Descrição                                         | Tipo de Dado |
+|--------------------|---------------------------------------------------|--------------|
+| User ID            | Identificador único de cada usuário.              | Numérico     |
+| Subscription Type  | Tipo de assinatura (Basic, Standard, Premium).    | Categórico   |
+| Monthly Revenue    | Receita mensal gerada por cada usuário (em dólares). | Numérico     |
+| Join Date          | Data de adesão do usuário à plataforma (dd-mm-aa). | Data         |
+| Last Payment Date  | Data do último pagamento realizado (dd-mm-aa).     | Data         |
+| Country            | País de origem/residência do usuário.             | Categórico   |
+| Age                | Idade do usuário.                                | Numérico     |
+| Gender             | Gênero do usuário (Masculino, Feminino).          | Categórico   |
+| Device             | Dispositivo usado para acessar a plataforma.        | Categórico   |
+| Plan Duration      | Duração do plano atual (1 mês, 6 meses, etc.).    | Categórico   |
+
+**Total:** 10 colunas e 2500 linhas.
+
+### Fluxo de Análise
+
+A análise seguiu um fluxo lógico de exploração e interpretação dos dados:
+
+* **Importação e limpeza dos dados:**
+    * Carregamento do dataset com pandas.
+    * Tratamento de valores ausentes e inconsistências.
+    * Conversão de tipos de dados.
+* **Análise Exploratória de Dados (EDA):**
+    * Estatísticas descritivas (describe(), info()).
+    * Gráficos para distribuições e tendências (histograma, boxplot, scatterplot).
+* **Visualização e Identificação de Tendências:**
+    * Uso do seaborn para gráficos (dispersão, barras, heatmaps).
+    * Comparação de métricas entre planos de assinatura.
+    * Identificação de padrões no comportamento dos assinantes.
+* **Geração de insights:**
+    * Interpretação de dados visuais e estatísticos.
+    * Identificação de fatores de cancelamento.
+    * Sugestões de estratégias de retenção.
+
+### Ferramentas e Tecnologias Utilizadas
+
+* **Python:** Linguagem principal.
+* **Jupyter Notebook:** Ambiente interativo de desenvolvimento.
+
+### Bibliotecas Utilizadas
+
+* **pandas:** Carregamento, manipulação e tratamento de dados.
+* **seaborn:** Criação de gráficos estatísticos e visualizações.
+* **matplotlib:** Construção e personalização de visualizações.
+
+### Análise Exploratória
+
+A análise exploratória buscou identificar correlações entre características dos usuários e o cancelamento da assinatura.
+
+### Dados Analisados
+
+* Distribuição de assinantes por idade, gênero e país.
+* Frequência de cancelamentos ao longo do tempo.
+* Tipos de planos mais populares e propensos ao cancelamento.
+
+**Principais Descobertas:**
+
+* Maior parte dos cancelamentos nos primeiros três meses.
+* Plano básico com maior taxa de cancelamento.
+* Retenção mais eficaz em assinantes mais jovens.
+* Os gráficos gerados estão disponíveis no repositório do GitHub.
+
+### Cronograma das atividades
+
+| Fase    | Tarefa                                    | Status  | Data de entrega |
+|---------|-------------------------------------------|---------|-----------------|
+| Etapa 1 | Apresentação, objetivo, metas e milestones | Feito   | 03/03/2025      |
+| Etapa 2 | Definição do Produto Analítico            | Feito   | 31/03/2025      |
+| Etapa 3 | Apresentação de Produtos e Storytelling  | Pendente| 28/04/2025      |
+| Etapa 4 | Apresentação final do projeto             | Pendente| 26/05/2025      |
+
+
+---
+
+## 6. Estrutura do Repositório  
 
 O projeto está organizado da seguinte forma no repositório:  
 
