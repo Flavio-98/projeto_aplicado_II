@@ -134,16 +134,6 @@ A análise exploratória buscou identificar correlações entre características
 * Retenção mais eficaz em assinantes mais jovens.
 * Os gráficos gerados estão disponíveis no repositório do GitHub.
 
-### Cronograma das atividades
-
-| Fase    | Tarefa                                    | Status  | Data de entrega |
-|---------|-------------------------------------------|---------|-----------------|
-| Etapa 1 | Apresentação, objetivo, metas e milestones | Feito   | 03/03/2025      |
-| Etapa 2 | Definição do Produto Analítico            | Feito   | 31/03/2025      |
-| Etapa 3 | Apresentação de Produtos e Storytelling  | Pendente| 28/04/2025      |
-| Etapa 4 | Apresentação final do projeto             | Pendente| 26/05/2025      |
-
-
 ---
 
 ## 6. Estrutura do Repositório  
