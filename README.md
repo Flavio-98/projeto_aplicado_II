@@ -58,7 +58,7 @@ Explorar dados demográficos e comportamentais dos assinantes da Netflix para ge
 |-----------------------------|----------------------------------------------------|----------|----------------|
 | *Etapa 1*                 | Definição da organização, área de atuação e dados | Feito | 03/03/2025     |
 | *Etapa 2*                 | Desenvolvimento de visualizações e narrativas     | Feito | 31/03/2025     |
-| *Etapa 3*                 | Análise dos resultados e previsão de churn       | Pendente | 28/04/2025     |
+| *Etapa 3*                 | Análise dos resultados e previsão de churn       | Feito | 28/04/2025     |
 | *Etapa 4*                 | Apresentação final do projeto                     | Pendente | 26/05/2025     |
 
 ---
