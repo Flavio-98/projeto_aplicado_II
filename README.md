@@ -116,6 +116,11 @@ A análise seguiu um fluxo lógico de exploração e interpretação dos dados:
 * **pandas:** Carregamento, manipulação e tratamento de dados.
 * **seaborn:** Criação de gráficos estatísticos e visualizações.
 * **matplotlib:** Construção e personalização de visualizações.
+* **datetime:** Manipulação de datas e horários.
+* **sklearn.model_selection.train_test_split:** Para dividir o dataset em conjuntos de treino e teste.
+* **sklearn.tree.DecisionTreeClassifier:** Para implementar o modelo de Árvore de Decisão para classificação.
+* **sklearn.metrics:** Para avaliar o desempenho do modelo através de métricas como acurácia, precision, recall, F1-Score, relatório de classificação, matriz de confusão e curva ROC/AUC.
+* **imblearn.over_sampling.SMOTE:** Para aplicar a técnica de Synthetic Minority Over-sampling Technique (SMOTE) no tratamento de dados desbalanceados.
 
 ### Análise Exploratória
 
