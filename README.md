@@ -132,11 +132,90 @@ A análise exploratória buscou identificar correlações entre características
 * Maior parte dos cancelamentos nos primeiros três meses.
 * Plano básico com maior taxa de cancelamento.
 * Retenção mais eficaz em assinantes mais jovens.
-* Os gráficos gerados estão disponíveis no repositório do GitHub.
+
+  Os gráficos gerados estão disponíveis no repositório do GitHub.
+
+ ## 6. Método Analítico Aplicado
+
+**Inferência de Churn:**
+
+* Usuários com "Last Payment Date" superior a 30 dias em relação a 01/08/2023 foram considerados como churn.
+
+**Modelo Preditivo:**
+
+* Utilizou-se uma Árvore de Decisão (`DecisionTreeClassifier`) para modelar a probabilidade de cancelamento.
+
+**Pré-processamento:**
+
+* Variáveis categóricas foram transformadas utilizando a técnica de one-hot encoding.
+* A base de dados foi dividida em conjuntos de treino (70%) e teste (30%).
+* Para lidar com o desbalanceamento severo da base de dados, foram aplicadas técnicas de balanceamento de classes (SMOTE) e ajuste de pesos (`class_weight='balanced'`).
+
+**Análise Exploratória Adicional:**
+
+Além do modelo preditivo, também foram consideradas as seguintes distribuições e tendências:
+
+* Distribuição de assinantes por idade, gênero e país.
+* Frequência de cancelamentos ao longo do tempo.
+* Tipos de planos mais populares e aqueles com maior propensão ao cancelamento.
+
+## 7. Avaliação do Modelo e Métricas
+
+Os resultados do modelo preditivo no conjunto de teste foram os seguintes:
+
+* **Acurácia:** 52,27%
+* **Precision:** 43,68%
+* **Recall:** 62,71%
+* **F1-Score:** 51,49%
+
+Esses resultados demonstram que, apesar do desbalanceamento inicial dos dados, o modelo alcançou um bom equilíbrio entre a identificação de canceladores reais (bom recall) e a minimização de falsos positivos (precision razoável), especialmente considerando as técnicas de balanceamento aplicadas. O F1-Score, que combina precision e recall, indica um desempenho geral satisfatório do modelo.
+
+## 8. Resultados Preliminares e Insights
+
+A análise dos dados e os resultados do modelo preditivo forneceram insights valiosos sobre o perfil dos usuários mais propensos ao churn e potenciais oportunidades de negócio:
+
+**Perfil do usuário mais propenso ao churn:**
+
+* **Plano:** Basic
+* **Idade:** 18-25 anos
+* **Dispositivo:** Predominância de laptop
+* **Países:** Mercados emergentes
+
+**Oportunidades de negócio:**
+
+* Desenvolver promoções e melhorias focadas no plano Basic para aumentar sua retenção.
+* Implementar campanhas de marketing específicas para o público jovem adulto (18-25 anos).
+* Incentivar o uso multiplataforma, destacando os benefícios da utilização em diferentes dispositivos (ex.: smart TV + mobile).
+
+**Ponto de atenção:**
+
+* A maior parte dos cancelamentos ocorre nos primeiros três meses de assinatura, indicando a importância de estratégias de engajamento e valorização do serviço logo após a adesão.
+
+## 9. Visualização de Dados
+
+Os gráficos gerados durante a análise (inclusos no repositório do GitHub) oferecem uma visualização clara dos dados e auxiliam na compreensão dos comportamentos mais críticos para o negócio, como a distribuição de churn por diferentes características dos usuários e a frequência de cancelamentos ao longo do tempo.
+
+## 10. Esboço do Storytelling
+
+**Contexto:**
+
+Mercado de streaming altamente competitivo. Retenção de clientes é vital.
+
+**Problema:**
+
+Churn elevado em determinados perfis de usuário. Durante o projeto, foi identificado um forte desbalanceamento nos dados, com predominância de clientes cancelados. Técnicas de balanceamento de classes foram aplicadas para melhorar a capacidade preditiva do modelo.
+
+**Solução:**
+
+Modelo de Machine Learning para identificar usuários de risco e antecipar ações de retenção.
+
+**Impacto:**
+
+Aumento potencial da taxa de retenção em até 10%, com melhora da receita e diminuição dos custos de aquisição. 
 
 ---
 
-## 6. Estrutura do Repositório  
+## 11. Estrutura do Repositório  
 
 O projeto está organizado da seguinte forma no repositório:  
 
