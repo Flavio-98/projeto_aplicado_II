@@ -200,7 +200,7 @@ A análise dos dados e os resultados do modelo preditivo forneceram insights val
 
 Os gráficos gerados durante a análise (inclusos no repositório do GitHub) oferecem uma visualização clara dos dados e auxiliam na compreensão dos comportamentos mais críticos para o negócio, como a distribuição de churn por diferentes características dos usuários e a frequência de cancelamentos ao longo do tempo.
 
-## 10. Esboço do Storytelling
+## 10. Storytelling
 
 **Contexto:**
 
@@ -217,6 +217,8 @@ Modelo de Machine Learning para identificar usuários de risco e antecipar açõ
 **Impacto:**
 
 Aumento potencial da taxa de retenção em até 10%, com melhora da receita e diminuição dos custos de aquisição. 
+
+**Link da apresentação:**
 
 ---
 
