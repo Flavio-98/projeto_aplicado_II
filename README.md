@@ -220,6 +220,8 @@ Aumento potencial da taxa de retenção em até 10%, com melhora da receita e di
 
 **Link da apresentação:**
 
+https://www.youtube.com/watch?v=1dwsWCQc3K0
+
 ---
 
 ## 11. Estrutura do Repositório  
